@@ -11,13 +11,30 @@
 
 
 
-url= "https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS";
-   let accordionMenu = document.querySelector('.accordionMenu');
+//url= "https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS";
+  let accordionMenu = document.querySelector('.accordionMenu');
   console.log(accordionMenu)
    
   function fetchData(){
      
-    fetch(url)
+    fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS")
+     .then(res =>{
+       console.log('success', res)
+       return res.json();
+     })
+
+    
+     
+     .then(res =>{
+      console.log(res.url)
+      let img = document.createElement("img");
+      img.src = res.url
+      document.getElementsByClassName("panel")[0].appendChild(img);
+
+    })
+    
+   
+    fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS")
      .then(res =>{
        console.log('success', res)
        return res.json();
@@ -26,14 +43,50 @@ url= "https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC
       console.log(res.hdurl)
       let img = document.createElement("img");
       img.src = res.hdurl
-      document.getElementsByClassName("panel")[0].appendChild(img);
-
+      document.getElementsByClassName("panel")[1].appendChild(img);
       
-      
-      
-
     })
+
+     fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS")
+     .then(res =>{
+       console.log('success', res)
+       return res.json();
+     })
+     .then(res =>{
+      console.log(res.hdurl)
+      let img = document.createElement("img");
+      img.src = res.hdurl
+      document.getElementsByClassName("panel")[2].appendChild(img);
+    })
+
    }
+
+
+   fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS")
+     .then(res =>{
+       console.log('success', res)
+       return res.json();
+     })
+     .then(res =>{
+      console.log(res.hdurl)
+      let img = document.createElement("img");
+      img.src = res.hdurl
+      document.getElementsByClassName("panel")[3].appendChild(img);
+    })
+
+
+     fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS")
+     .then(res =>{
+       console.log('success', res)
+       return res.json();
+     })
+     .then(res =>{
+      console.log(res.hdurl)
+      let img = document.createElement("img");
+      img.src = res.hdurl
+      document.getElementsByClassName("panel")[4].appendChild(img);
+    })
+
    document.getElementsByClassName(".accordionMenu").innerHTML =
 accordionMenu + " " + accordionMenu;
 fetchData()
