@@ -1,8 +1,20 @@
+// let panel1 = getElementsByID('#panel1');
+// panel1.addEventListener('click', fetchData);
+// let panel2 = getElementsByID('#panel2');
+// panel2.addEventListener('click', fetchData);
+// let panel3 = getElementsByID('click', fetchData);
+// panel3.addEventListener('click', fetchData)
+// let panel4 = getElementsByID("click", fetchData);
+// panel4.addEventListener('click', fetchData)
+// let panel5 = getElementsByID("click", fetchData);
+// panel5.addEventListener('click', fetchData);
+
+
 
 url= "https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS";
-   let accordionMenu =document.querySelector('.accordionMenu');
+   let accordionMenu = document.querySelector('.accordionMenu');
   console.log(accordionMenu)
-   //accordionMenu.addEventListener('click',fetchData);
+   
   function fetchData(){
      
     fetch(url)
@@ -15,6 +27,11 @@ url= "https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC
       let img = document.createElement("img");
       img.src = res.hdurl
       document.getElementsByClassName("panel")[0].appendChild(img);
+
+      
+      
+      
+
     })
    }
    document.getElementsByClassName(".accordionMenu").innerHTML =
@@ -28,7 +45,7 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 //this is a loop with onclick function 1
-for (i = 0; i < acc.length; i++) {
+for (let i = 0; i < acc.length; i++) {
     acc[i].onclick = function(){
         this.classList.toggle("active");
 
@@ -41,7 +58,7 @@ for (i = 0; i < acc.length; i++) {
     }
 }
 //this is a loop with onclick function 2
-for (i = 0; i < acc.length; i++) {
+for (let i = 0; i < acc.length; i++) {
   acc[i].onclick = function() {
     this.classList.toggle("active");
     
