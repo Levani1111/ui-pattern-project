@@ -17,7 +17,7 @@
    
   function fetchData(){
      
-    fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS")
+    fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2008-08-05")
      .then(res =>{
        console.log('success', res)
        return res.json();
@@ -30,60 +30,67 @@
       let img = document.createElement("img");
       img.src = res.url
       document.getElementsByClassName("panel")[0].appendChild(img);
-
+      let p = document.createElement("P");
+      p.innerText = res.explanation
+      document.getElementsByClassName("panel")[0].appendChild(p);
     })
-    
+
    
-    fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS")
+    fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=1997-06-16")
      .then(res =>{
        console.log('success', res)
        return res.json();
      })
      .then(res =>{
-      console.log(res.hdurl)
+      console.log(res.url)
       let img = document.createElement("img");
-      img.src = res.hdurl
+      img.src = res.url
       document.getElementsByClassName("panel")[1].appendChild(img);
-      
+     
+
+//.catch(err => {
+//  console.log("somthing went wrong...,"error);
+//});
+    
     })
 
-     fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS")
+     fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2010-11-11")
      .then(res =>{
        console.log('success', res)
        return res.json();
      })
      .then(res =>{
-      console.log(res.hdurl)
+      console.log(res.url)
       let img = document.createElement("img");
-      img.src = res.hdurl
+      img.src = res.url
       document.getElementsByClassName("panel")[2].appendChild(img);
     })
 
    }
 
 
-   fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS")
+   fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2020-02-02")
      .then(res =>{
        console.log('success', res)
        return res.json();
      })
      .then(res =>{
-      console.log(res.hdurl)
+      console.log(res.url)
       let img = document.createElement("img");
-      img.src = res.hdurl
+      img.src = res.url
       document.getElementsByClassName("panel")[3].appendChild(img);
     })
 
 
-     fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS")
+     fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2015-04-03")
      .then(res =>{
        console.log('success', res)
        return res.json();
      })
      .then(res =>{
-      console.log(res.hdurl)
+      console.log(res.url)
       let img = document.createElement("img");
-      img.src = res.hdurl
+      img.src = res.url
       document.getElementsByClassName("panel")[4].appendChild(img);
     })
 
