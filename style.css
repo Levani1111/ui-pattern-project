@@ -5,9 +5,13 @@ body {
   
   }
 img{
-   float: center;
-   max-height: 400px;
-   max-width: 400px;
+  margin-bottom: 17px;
+  margin-top: 17px;
+   /*border: solid 1px;*/
+   padding-top: 20px;
+   float: left;
+   max-height: 210px;
+   max-width: 250px;
    
 }
 
@@ -16,9 +20,15 @@ img{
 }
 
 p{ 
-  display: flex;
-  text-align: right;
-  padding-left: 50px;
+  float: right;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin: 15px;
+  width: 550px;
+  border: 2px solid white;
+  padding:7px;
+  /*padding-left: 280px;*/
+
 
 }
 
