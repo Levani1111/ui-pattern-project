@@ -1,15 +1,21 @@
 body { 
-  /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
   
-  }
+}
+
+
+h1{
+  padding: 20px;
+  margin: 17px;
+  text-align: center;
+}
+
+
 img{
   margin-bottom: 17px;
   margin-top: 17px;
    /*border: solid 1px;*/
    padding-top: 20px;
-   float: left;
+   float:       left;
    max-height: 210px;
    max-width: 250px;
    
@@ -25,11 +31,8 @@ p{
   margin-top: 15px;
   margin: 15px;
   width: 550px;
-  border: 2px solid white;
   padding:7px;
   /*padding-left: 280px;*/
-
-
 }
 
 button.accordion {
@@ -39,7 +42,7 @@ button.accordion {
   /*background-image: linear-gradient(315deg, #000000 0%, #414141 74%);/*
   /*background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);/*
     /*background-color: #8e2800;*/
-    color: #fff0a5;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 70%;
@@ -83,11 +86,12 @@ button.accordion.active:after {
 }
 
 
+
+
 .header {
   overflow: hidden;
   background-color: black;
-  /*background-color: #8e2800;*/
-  /*color: #fff0a5;*/
+  color: #fff0a5;
   padding: 20px 10px;
 }
 
@@ -120,6 +124,10 @@ button.accordion.active:after {
 
 }
 
+
+
+
+
 @keyframes shining {
   from {
     background-position: -500%;
@@ -133,9 +141,8 @@ button.accordion.active:after {
 
 /*.header a:hover {
   background-color: #b64926;
-  
-}
-*/
+  }
+  */
 .header a.active {
   background-color: dodgerblue;
   color: white;
@@ -155,6 +162,7 @@ button.accordion.active:after {
   .header-right {
     float: none;
   }
+  
 
 
   

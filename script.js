@@ -12,23 +12,23 @@
 
 
 //url= "https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS";
+  
   let accordionMenu = document.querySelector('.accordionMenu');
   console.log(accordionMenu)
    
   function fetchData(){
      
-    fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2008-08-05")
+
+    fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2011-08-05")
      .then(res =>{
        console.log('success', res)
        return res.json();
      })
-
-    
      
      .then(res =>{
-      console.log(res.url) // link of img
+      console.log(res.url)   // link of img
       let img = document.createElement("img");
-      img.src = res.url // link of img
+      img.src = res.url    // link of img
       document.getElementsByClassName("panel")[0].appendChild(img);
       let p = document.createElement("P"); //tetx start here
       p.innerText = res.explanation
@@ -36,19 +36,19 @@
     })
 
    // img is in this link
-    fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=1997-06-16")
+    fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2000-06-16")
      .then(res =>{
        console.log('success', res)
        return res.json();
      })
      .then(res =>{
-      console.log(res.url) // link of img
+      console.log(res.url)    // link of img
       let img = document.createElement("img");
-      img.src = res.url // link of img
-      document.getElementsByClassName("panel")[2].appendChild(img);
+      img.src = res.url      // link of img
+      document.getElementsByClassName("panel")[1].appendChild(img);
       let p = document.createElement("P"); //tetx start here
       p.innerText = res.explanation
-      document.getElementsByClassName("panel")[2].appendChild(p);
+      document.getElementsByClassName("panel")[1].appendChild(p);
      
 
 //.catch(err => {
@@ -57,19 +57,19 @@
     
     })
       // img is in this link
-     fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2010-11-11")
+     fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2017-11-11")
      .then(res =>{
        console.log('success', res)
        return res.json();
      })
      .then(res =>{
-      console.log(res.url) // link of img
+      console.log(res.url)   // link of img
       let img = document.createElement("img");
-      img.src = res.url // link of img
-      document.getElementsByClassName("panel")[1].appendChild(img);
+      img.src = res.url    // link of img
+      document.getElementsByClassName("panel")[2].appendChild(img);
       let p = document.createElement("P"); //tetx start here
       p.innerText = res.explanation
-      document.getElementsByClassName("panel")[1].appendChild(p);
+      document.getElementsByClassName("panel")[2].appendChild(p);
     })
 
    }
@@ -81,25 +81,27 @@
        return res.json();
      })
      .then(res =>{
-      console.log(res.url) // link of img
+      console.log(res.url)   // link of img
       let img = document.createElement("img");
-      img.src = res.url // link of img
+      img.src = res.url   // link of img
       document.getElementsByClassName("panel")[3].appendChild(img);
       let p = document.createElement("P"); //tetx start here
       p.innerText = res.explanation
       document.getElementsByClassName("panel")[3].appendChild(p);
+
     })
        // img is in this link
-      fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2015-04-03")
+      fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2018-04-03")
      .then(res =>{
        console.log('success', res)
        return res.json();
+
      })
      
      .then(res =>{
-      console.log(res.url) // link of img
+      console.log(res.url)   // link of img
       let img = document.createElement("img");
-      img.src = res.url // link of img
+      img.src = res.url   // link of img
       document.getElementsByClassName("panel")[4].appendChild(img);
       let p = document.createElement("P"); //tetx start here
       p.innerText = res.explanation
@@ -142,3 +144,8 @@ for (let i = 0; i < acc.length; i++) {
     } 
   }
 }
+
+
+
+
+
