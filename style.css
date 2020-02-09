@@ -1,4 +1,5 @@
 body { 
+
   background-image: url("man-4.jpg");
    /* background-image-max-width: 1200px;
     background-image-max-height: 100px;*/
@@ -6,13 +7,25 @@ body {
     background-repeat: no-repeat; 
 }
 
+.h1{
+  border: white, 5px;
+  font-size: 31px;
+  padding-top: 51px;
+  padding-left: 21px;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+  color: white;
+}
+
+
 img{
   margin-bottom: 17px;
   margin-top: 17px;
    /*border: solid 1px;*/
    padding-top: 20px;
    float:       left;
-   max-height: 210px;
+   max-height: 140px;
    max-width: 250px;
    
 }
@@ -24,10 +37,12 @@ img{
 p{ 
   float: right;
   margin-bottom: 15px;
-  margin-top: 15px;
-  margin: 15px;
-  width: 550px;
+  margin-top: 17px;
+  /*margin: 15px;*/
+  width: 650px;
   padding:7px;
+  padding-right: 10px;
+  
   /*padding-left: 280px;*/
 }
 
@@ -43,7 +58,7 @@ button.accordion {
     padding: 18px;
     width: 70%;
     text-align: left;
-    border: none;
+    border: white, 1%;
     outline: none;
     transition: 0.4s;
     margin: 0 15% 2px 15%;
@@ -52,7 +67,7 @@ button.accordion {
 }
 
 button.accordion.active, button.accordion:hover {
-  border: white, 12px;
+  border: white, 17px;
    box-shadow: 0 0.3px 0.7px rgba(0, 0, 0, 0.126),
     0 0.9px 1.7px rgba(0, 0, 0, 0.179), 0 1.8px 3.5px rgba(0, 0, 0, 0.224),
     0 3.7px 7.3px rgba(0, 0, 0, 0.277), 0 10px 20px rgba(0, 0, 0, 0.4);
@@ -72,7 +87,6 @@ div.panel {
 }
 
 button.accordion:after {
-     
     content: '\02795' ;
     font-size: 13px;
     float: right;
@@ -83,7 +97,7 @@ button.accordion.active:after {
     content: "\2796";
 }
 
-.header {
+/*.header {
   overflow: hidden;
   background-color: transparent;
   color: #fff0a5;
@@ -118,7 +132,7 @@ button.accordion.active:after {
   font-weight: bold;
 
 }
-
+*/
 
 
 
@@ -129,15 +143,13 @@ button.accordion.active:after {
   }
   to {
     background-position: 500%;
-  
-  
-}
+  }
 }
 
 /*.header a:hover {
   background-color: #b64926;
   }
-  */
+  
 .header a.active {
   background-color: dodgerblue;
   color: white;
@@ -146,6 +158,7 @@ button.accordion.active:after {
 .header-right {
   float: right;
 }
+*/
 
 @media screen and (max-width: 500px) {
   .header a {
@@ -158,6 +171,31 @@ button.accordion.active:after {
     float: none;
   }
   
+
+  @media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  ...;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  ...;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  ...;
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  ...;
+}
 
 
   
