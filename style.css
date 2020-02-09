@@ -1,14 +1,10 @@
 body { 
-  
+  background-image: url("man-4.jpg");
+   /* background-image-max-width: 1200px;
+    background-image-max-height: 100px;*/
+    background-size: 1500px;
+    background-repeat: no-repeat; 
 }
-
-
-h1{
-  padding: 20px;
-  margin: 17px;
-  text-align: center;
-}
-
 
 img{
   margin-bottom: 17px;
@@ -42,7 +38,7 @@ button.accordion {
   /*background-image: linear-gradient(315deg, #000000 0%, #414141 74%);/*
   /*background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);/*
     /*background-color: #8e2800;*/
-    color: black;
+    color: white;
     cursor: pointer;
     padding: 18px;
     width: 70%;
@@ -56,6 +52,7 @@ button.accordion {
 }
 
 button.accordion.active, button.accordion:hover {
+  border: white, 12px;
    box-shadow: 0 0.3px 0.7px rgba(0, 0, 0, 0.126),
     0 0.9px 1.7px rgba(0, 0, 0, 0.179), 0 1.8px 3.5px rgba(0, 0, 0, 0.224),
     0 3.7px 7.3px rgba(0, 0, 0, 0.277), 0 10px 20px rgba(0, 0, 0, 0.4);
@@ -75,7 +72,8 @@ div.panel {
 }
 
 button.accordion:after {
-    content: '\02795';
+     
+    content: '\02795' ;
     font-size: 13px;
     float: right;
     margin-left: 5px;
@@ -85,23 +83,20 @@ button.accordion.active:after {
     content: "\2796";
 }
 
-
-
-
 .header {
   overflow: hidden;
-  background-color: black;
+  background-color: transparent;
   color: #fff0a5;
-  padding: 20px 10px;
+  padding: 10px 10px;
 }
 
 .header a {
-  float: left;
+  float: center;
   color: black;
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px; 
+  font-size: 20px; 
   line-height: 25px;
   border-radius: 4px;
 }
