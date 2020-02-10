@@ -19,7 +19,7 @@
   function fetchData(){
      
 
-    fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2011-08-05")
+    fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2018-08-05")
      .then(res =>{
        console.log('success', res)
        return res.json();
@@ -36,7 +36,7 @@
     })
 
    // img is in this link
-    fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2000-06-16")
+    fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2004-06-16")
      .then(res =>{
        console.log('success', res)
        return res.json();
@@ -57,7 +57,7 @@
     
     })
       // img is in this link
-     fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2017-11-11")
+     fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2002-11-11")
      .then(res =>{
        console.log('success', res)
        return res.json();
@@ -75,7 +75,7 @@
    }
 
    // img is in this link
-   fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2020-02-02")
+   fetch("https://api.nasa.gov/planetary/apod?api_key=hkkghHbvnT8Zc9QJAYtX8oSFD72lTC53fUyfMLyS&date=2005-02-02")
      .then(res =>{
        console.log('success', res)
        return res.json();

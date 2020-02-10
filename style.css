@@ -1,14 +1,11 @@
 body { 
 
-  background-image: url("man-4.jpg");
-   /* background-image-max-width: 1200px;
-    background-image-max-height: 100px;*/
+    background-image: url("man-4.jpg");
     background-size: 1500px;
     background-repeat: no-repeat; 
 }
 
-.h1{
-  
+.h1 {
   font-size: 31px;
   padding-top: 51px;
   padding-left: auto;
@@ -18,41 +15,35 @@ body {
   color: white;
 }
 
+/* This is Responsive Images */
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border: 9px solid white;
+  border-radius: 4px;
+  float:  left;
+  }
 
-img{
-  margin-bottom: 17px;
-  margin-top: 17px;
-   /*border: solid 1px;*/
-   padding-top: 20px;
-   float:       left;
-   max-height: 140px;
-   max-width: 250px;
-   
-}
-
-.accordionMenu{
+.accordionMenu {
   margin-top: 50px;
 }
 
-p{ 
-  float: right;
-  margin-bottom: 15px;
-  margin-top: 17px;
-  /*margin: 15px;*/
-  width: 650px;
-  padding:7px;
-  padding-right: 10px;
- /*padding-left: 280px;*/
-}
+p { 
+  margin-top: 50px;
+   height: auto;
+  max-width: 100%;
+  border: none;
+  display: block;
+  padding: 5px 0;
+  }
 
 button.accordion {
+  backdrop-filter: blur(20px);
   background: rgba(0,0,0,0.3);
   color: white;
-  /*background-color: #000000;/*
-  /*background-image: linear-gradient(315deg, #000000 0%, #414141 74%);/*
-  /*background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);/*
-    /*background-color: #8e2800;*/
-    color: white;
     cursor: pointer;
     padding: 18px;
     width: 70%;
@@ -67,12 +58,10 @@ button.accordion {
 
 button.accordion.active, button.accordion:hover {
   border: white, 17px;
-   box-shadow: 0 0.3px 0.7px rgba(0, 0, 0, 0.126),
+   box-shadow: 0 0.3px 0.7px rgba(0, 0, 0, 0.126), 
     0 0.9px 1.7px rgba(0, 0, 0, 0.179), 0 1.8px 3.5px rgba(0, 0, 0, 0.224),
-    0 3.7px 7.3px rgba(0, 0, 0, 0.277), 0 10px 20px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(20px);
-  transition: 0.5s ease;
-    /*background-color: #b64926;*/
+    0 3.7px 7.3px rgba(0, 0, 0, 0.277), 0 10px 20px white;
+
 
 }
 
@@ -86,9 +75,7 @@ div.panel {
 }
 
 button.accordion:after {
-  
     content:'\02795';
-    color: white;
     font-size: 13px;
     float: right;
     margin-left: 5px;
@@ -98,6 +85,30 @@ button.accordion.active:after {
     content-color: "\2796";
 
 }
+
+.element {
+    position: relative;
+}
+ 
+/*replace the content value with the
+corresponding value from the list below*/
+ 
+.element:before {
+    content: '\f037';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+
 
 /*.header {
   overflow: hidden;
@@ -137,7 +148,17 @@ button.accordion.active:after {
 */
 
 
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
 
 @keyframes shining {
   from {
@@ -173,32 +194,16 @@ button.accordion.active:after {
     float: none;
   }
   
-
-  @media only screen and (max-width: 340px) {
-  .footer .col {
-    width: 100%;
-  }
-}
-/* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) {
-  ...;
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-  ...;
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
 }
-
-/* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-  ...;
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
-  ...;
-}
-
-
   
   
