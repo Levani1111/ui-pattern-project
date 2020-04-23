@@ -9,3 +9,5 @@ This project uses:
 ### HTML
 ### CSS
 ### Java Script
+
+### Link to deployed site: https://levani1111.github.io/ui-pattern-project/
